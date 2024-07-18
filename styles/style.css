@@ -11,11 +11,11 @@
 }
 
 /* Miama font */
-                            @import url('https://fonts.cdnfonts.com/css/miama-nueva');
+    @import url('https://fonts.cdnfonts.com/css/miama-nueva');
 
 
 /* header section */
-.header{
+.bg-color{
     background-color: rgba(17, 17, 17, 1);
 }
 
@@ -110,7 +110,6 @@ nav li a{
     color: rgba(255, 255, 255, 1);
 }
 .box-1{
-    /* border: 1px solid wheat; */
     width: 25%;
     position: relative;
     text-align: center;
@@ -121,7 +120,6 @@ nav li a{
     margin-left: -40px;
 }
 .box-2{
-    /* border: 1px solid wheat; */
     width: 30%;
     text-align: center;
     position: relative;
@@ -134,4 +132,68 @@ nav li a{
 .round-icon{
     width: 30px;
     padding: 0px 200px 0px 0px;
+}
+
+/* Change your habits section styles  */
+
+#habit-container{
+    padding: 150px 0px;
+    display: grid;
+}
+.change-habits{
+    text-align: center;
+    padding-bottom: 80px;
+}
+.habit-title{
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+.habit-description{
+    color: rgba(255, 255, 255, 0.5);
+}
+.box-container{
+    display: flex;
+    padding: 0px 55px;
+    justify-content: space-around;
+}
+.fitness-title{
+    color: rgba(255, 255, 255, 1);
+}
+.fitness-description{
+    color: rgba(255, 255, 255, 0.5);
+}
+.fitness-img{
+    border-radius: 50%;
+}
+.fitness-box-1, .fitness-box-2, .fitness-box-3, .fitness-box-4{
+    text-align: center;
+    padding: 0px 20px;
+}
+/* Run an extra mile section styles */
+.extra-mile-box{
+    display: flex;
+    background-color: rgba(34, 34, 34, 1);
+    margin: 0px 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+}
+.run-container{
+    padding: 0px 150px;
+}
+.run-title{
+    font-family: "Inter", sans-serif;
+    font-size: 2.3rem;
+    color: rgba(255, 255, 255, 1);
+}
+.run-description{
+    color: rgba(255, 255, 255, 0.5);
+}
+.run-image{
+    width: 300px;
+    margin-right: 100px;
+    border-radius: 20px;
 }
