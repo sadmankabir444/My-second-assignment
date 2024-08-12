@@ -197,3 +197,62 @@ nav li a{
     margin-right: 100px;
     border-radius: 20px;
 }
+/* BMI Calculator Section */
+.bmi-title{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 1);
+}
+.bmi-description{
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0;
+}
+.bmi-head{
+    /* display: flex; */
+    border: 1px solid salmon;
+    text-align: center;
+    
+}
+.bmi-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34, 1);
+    padding: 50px 0px 50px 0px;
+}
+.chart-info{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    padding-left: 200px;
+}
+.chart-head{
+    color: rgba(255, 255, 255, 1);
+    padding-left: 220px;
+}
+.item{
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+}
+.bmi-calculate{
+    padding: 0px 130px 0px 120px;
+    
+
+}
+.bmi-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+    
+}
+.input-item{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 5px 10px 5px;
+}
+.last-input{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
