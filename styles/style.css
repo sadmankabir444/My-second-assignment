@@ -208,9 +208,8 @@ nav li a{
     margin-top: 0;
 }
 .bmi-head{
-    /* display: flex; */
-    border: 1px solid salmon;
     text-align: center;
+    padding: 30px 0px 30px 0px;
     
 }
 .bmi-container{
@@ -225,8 +224,17 @@ nav li a{
     padding-left: 200px;
 }
 .chart-head{
+    font-family: "Inter", sans-serif;
     color: rgba(255, 255, 255, 1);
-    padding-left: 220px;
+    padding-left: 200px;
+    font-size: x-large;
+
+    
+}
+.calculate-head{
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-size: x-large;
 }
 .item{
     color: rgba(255, 255, 255, 0.5);
@@ -249,10 +257,51 @@ nav li a{
 .input-item{
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px 5px 10px 5px;
+    border-radius: 10px;
 }
 .last-input{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 10px;
     margin-bottom: 10px;
+}
+/* Meet Our Team Section Styles */
+
+.our-team{
+    background-color: rgba(17, 17, 17, 1);
+    padding-bottom: 70px;
+}
+.meet-title{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-top: 90px;
+}
+.meet-description{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 2px 300px 2px 300px;
+    margin-bottom: 50px;
+}
+.trainers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(34, 34, 34, 1);
+    justify-items: center;
+    margin: 0px 130px 0px 120px;
+    padding: 40px 70px 40px 70px;
+    gap: 20px;
+    border-radius: 10px;
+}
+.trainer-img{
+    height: 230px;
+    width: 270px;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+
+.footer-section{
+    display: flex;
 }
