@@ -89,7 +89,7 @@ nav li a{
 .btn-1{
     background-color: rgba(230, 83, 60, 1);
     color: rgba(255, 255, 255, 1);
-    padding: 10px 25px;
+    padding: 12px 30px;
     border-radius: 20px;
     margin-left: 5px;
 }
@@ -200,6 +200,8 @@ nav li a{
 }
 .run-description{
     color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin-top: -15px;
 }
 .run-image{
     width: 300px;
@@ -277,10 +279,12 @@ nav li a{
     padding: 50px 0px 50px 0px;
 }
 .chart-info{
+    font-family: "Inter", sans-serif;
     display: grid;
     grid-template-columns: 150px 150px;
     padding-left: 200px;
 }
+
 .chart-head{
     font-family: "Inter", sans-serif;
     color: rgba(255, 255, 255, 1);
@@ -299,6 +303,10 @@ nav li a{
     border: 1px solid rgba(255, 255, 255, 0.5);
     text-align: center;
     padding: 10px 5px 10px 5px;
+}
+.add{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.1rem;
 }
 .bmi-calculate{
     padding: 0px 130px 0px 120px;
@@ -405,4 +413,13 @@ nav li a{
 .footer-item{
     color: rgba(255, 255, 255, 0.5);
     padding-top: 30px;
+}
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        display: grid;
+        grid-template-columns: 1, 1fr;
+    }
 }
