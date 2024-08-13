@@ -71,7 +71,8 @@ nav li a{
 }
                                                 
 .left-side-banner{
-    margin: 50px 100px;
+    margin: 50px 0px;
+    padding-left: 100px;
 }
 .banner-title{
     font-family: "Inter", sans-serif;
@@ -104,10 +105,11 @@ nav li a{
     padding-top: 25px;
 }
 .banner-img{
-    margin: 10px 70px 10px 50px;
+    margin: 10px 70px 10px 70px;
 }
 .right-side-banner{
     color: rgba(255, 255, 255, 1);
+    margin-right: 70px;
 }
 .box-1{
     width: 25%;
@@ -119,8 +121,18 @@ nav li a{
     margin-top: -200px;
     margin-left: -40px;
 }
+.bg-icon{
+    background-color: rgba(230, 83, 60, 1);
+    margin-right: 200px;
+    position: absolute;
+    margin-top: 32px;
+    margin-left: -90px;
+    height: 38px;
+    width: 38px;
+    border-radius: 20px;
+}
 .box-2{
-    width: 30%;
+    width: 35%;
     text-align: center;
     position: relative;
     background-color: rgba(48, 48, 48, 0.54);
@@ -128,10 +140,6 @@ nav li a{
     border-radius: 10px;
     margin-top: -400px;
     margin-left: 250px;
-}
-.round-icon{
-    width: 30px;
-    padding: 0px 200px 0px 0px;
 }
 
 /* Change your habits section styles  */
@@ -179,6 +187,7 @@ nav li a{
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
+    border-radius: 15px;
 
 }
 .run-container{
@@ -197,6 +206,52 @@ nav li a{
     margin-right: 100px;
     border-radius: 20px;
 }
+/* Leaders And Gym Info Section */
+.leaders{
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    background-color: rgb(54, 46, 46);
+    justify-content: space-between;
+    border-radius: 20px;
+    /* align-items: center; */
+    /* border: 2px solid salmon; */
+    
+}
+.leaders-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px 20px 20px 20px;
+    /* width: 100px; */
+    /* border: 2px solid aqua; */
+}
+.about-gym{
+    text-align: center;
+    padding: 50px 100px 0px 100px;
+    /* border: 2px solid aquamarine; */
+
+}
+.leaders-img{
+    height: 150px;
+    width: 220px;
+    border-radius: 10px;
+}
+.gym-title{
+    color: rgb(210, 215, 219);
+}
+.gym-description{
+    color: rgb(168, 245, 239);
+}
+.resister-btn{
+    background-color: rgb(51, 115, 253);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 /* BMI Calculator Section */
 .bmi-title{
     font-family: "Inter", sans-serif;
@@ -204,10 +259,13 @@ nav li a{
     color: rgba(255, 255, 255, 1);
 }
 .bmi-description{
+    font-family: "Inter", sans-serif;
     color: rgba(255, 255, 255, 0.5);
-    margin-top: 0;
+    margin-top: -7px;
+    position: relative;
 }
 .bmi-head{
+    font-family: "Inter", sans-serif;
     text-align: center;
     padding: 30px 0px 30px 0px;
     
@@ -215,7 +273,7 @@ nav li a{
 .bmi-container{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(34, 34, 34, 1);
+    background-color: rgb(43, 39, 39);
     padding: 50px 0px 50px 0px;
 }
 .chart-info{
@@ -244,6 +302,8 @@ nav li a{
 }
 .bmi-calculate{
     padding: 0px 130px 0px 120px;
+    position: relative;
+    margin-top: -10px;
     
 
 }
@@ -268,6 +328,7 @@ nav li a{
 /* Meet Our Team Section Styles */
 
 .our-team{
+    font-family: "Inter", sans-serif;
     background-color: rgba(17, 17, 17, 1);
     padding-bottom: 70px;
 }
@@ -292,16 +353,56 @@ nav li a{
     margin: 0px 130px 0px 120px;
     padding: 40px 70px 40px 70px;
     gap: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .trainer-img{
     height: 230px;
     width: 270px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
-
+.trainer-title{
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    margin-top: -65px;
+    font-size: 1.3rem;
+    padding-left: 20px;
+}
+.trainer-info{
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    margin-top: -40px;
+    padding-left: 20px;
+}
 /* Footer Section */
 
 .footer-section{
-    display: flex;
+    font-family: "Inter", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(34, 34, 34, 1);
+    padding: 30px 0px 30px 170px;
+    align-content: space-around;
+}
+.footer-items{
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-head{
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+.second-footer{
+    padding-left: 70px;
+}
+.footer-added{
+    background-color: rgba(34, 34, 34, 1);
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+    width: 250%;
+}
+.hr-info{
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-item{
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 30px;
 }
