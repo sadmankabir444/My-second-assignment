@@ -15,6 +15,7 @@
 
 
 /* header section */
+
 .bg-color{
     background-color: rgba(17, 17, 17, 1);
 }
@@ -37,7 +38,7 @@
 .nav-info{
     font-family: "Inter", sans-serif;
     list-style: none;
-    padding: 5px 5px;
+    padding: 2px 2px;
     border: 1px solid rgb(79, 69, 69);
     border-radius: 20px;
     align-items: center;
@@ -46,6 +47,9 @@
 nav ul{
     display: flex;
     
+}
+.menubar{
+    display: none;
 }
 nav li a{
     text-decoration: none;
@@ -61,6 +65,7 @@ nav li a{
 }
 
 /* Banner Styles */
+
 .banner{
     display: flex;
     justify-content: space-between;
@@ -116,7 +121,7 @@ nav li a{
     position: relative;
     text-align: center;
     background-color: rgba(48, 48, 48, 0.54);
-    padding: 1px 0px 5px 70px;
+    padding: 1px 0px 5px 50px;
     border-radius: 10px;
     margin-top: -200px;
     margin-left: -40px;
@@ -132,11 +137,11 @@ nav li a{
     border-radius: 20px;
 }
 .box-2{
-    width: 35%;
+    width: 25%;
     text-align: center;
     position: relative;
     background-color: rgba(48, 48, 48, 0.54);
-    padding: 1px 10px 5px 10px;
+    padding: 1px 2px 1px 2px;
     border-radius: 10px;
     margin-top: -400px;
     margin-left: 250px;
@@ -180,6 +185,7 @@ nav li a{
     padding: 0px 20px;
 }
 /* Run an extra mile section styles */
+
 .extra-mile-box{
     display: flex;
     background-color: rgba(34, 34, 34, 1);
@@ -209,6 +215,7 @@ nav li a{
     border-radius: 20px;
 }
 /* Leaders And Gym Info Section */
+
 .leaders{
     display: flex;
     margin-left: 80px;
@@ -218,34 +225,37 @@ nav li a{
     background-color: rgb(54, 46, 46);
     justify-content: space-between;
     border-radius: 20px;
-    /* align-items: center; */
-    /* border: 2px solid salmon; */
     
+}
+.leaders-title{
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 15px;
 }
 .leaders-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 15px;
     padding: 20px 20px 20px 20px;
-    /* width: 100px; */
-    /* border: 2px solid aqua; */
 }
 .about-gym{
     text-align: center;
     padding: 50px 100px 0px 100px;
-    /* border: 2px solid aquamarine; */
 
 }
 .leaders-img{
-    height: 150px;
+    height: 170px;
     width: 220px;
     border-radius: 10px;
 }
 .gym-title{
-    color: rgb(210, 215, 219);
+    font-family: "Inter", sans-serif;
+    color: rgb(238, 231, 231);
+    font-size: x-large;
 }
 .gym-description{
-    color: rgb(168, 245, 239);
+    font-family: "Inter", sans-serif;
+    color: rgb(220, 226, 225);
 }
 .resister-btn{
     background-color: rgb(51, 115, 253);
@@ -255,6 +265,7 @@ nav li a{
     margin-top: 20px;
 }
 /* BMI Calculator Section */
+
 .bmi-title{
     font-family: "Inter", sans-serif;
     font-size: 2.5rem;
@@ -327,6 +338,7 @@ nav li a{
     padding: 10px 5px 10px 5px;
     border-radius: 10px;
 }
+
 .last-input{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -419,7 +431,100 @@ nav li a{
 
 @media screen and (max-width: 576px) {
     .navbar{
-        display: grid;
-        grid-template-columns: 1, 1fr;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 30px 0px 30px;
     }
+    
+    .menubar{
+        display: inline;
+        color: aliceblue;
+        font-size: x-large;
+    }
+    .nav-info{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .left-side-banner{
+        margin: 20px 0px;
+        padding-left: 20px;
+        width: auto;
+    }
+    .box-1{
+        margin-left: 20px;
+    }
+    
+   
+    #habit-container{
+        padding-top: 450px;
+    }
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .extra-mile-box{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .run-container{
+        padding: 30px 50px;
+    }
+    .run-image{
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .leaders{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .leaders-title{
+        margin-top: 0;
+    }
+    .about-gym{
+        padding: 30px 70px;
+    }
+    .leaders-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bmi-head{
+        padding: 20px 30px;
+    }
+    .chart-head{
+        padding-left: 40px;
+    }
+    .chart-info{
+        padding-left: 40px;
+    }
+    .bmi-container{
+        flex-direction: column;
+    }
+    .bmi-calculate{
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+    .trainers{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        padding: 20px 0px;
+   }
+   .meet-description{
+    padding: 10px 30px;
+    margin: 0;
+   }
+   .footer-section{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 30px;
+   }
+   .second-footer{
+    padding-left: 0px;
+}
+.footer-added{
+    width: 100%;
+}
 }
